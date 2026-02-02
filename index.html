@@ -656,7 +656,8 @@
             geometry.Iyy = Iyy; geometry.Izz = Izz; geometry.Iyz = Iyz;
         }
 
-        function calculateAxialForces(My, Mz) {
+        function calculateAxialForces(My, MzInput) {
+            const Mz = -MzInput; // Fix for coordinate system convention
             const denom = geometry.Iyy * geometry.Izz - geometry.Iyz * geometry.Iyz;
             if (Math.abs(denom) < 1e-9) return; 
             geometry.booms.forEach(b => {
