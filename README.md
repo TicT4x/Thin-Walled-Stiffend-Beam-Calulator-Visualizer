@@ -1,3 +1,5 @@
+Link: https://tict4x.github.io/Thin-Walled-Stiffend-Beam-Calulator-Visualizer/
+
 Known Errors:
 - Center of Shear of open profiles sometimes faulty
 - shear flow of L and Z profile weird
